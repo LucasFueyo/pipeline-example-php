@@ -25,3 +25,10 @@ stages:
   steps:
   - applyYamlConfig:
       path: ./deploy/deployment.yaml
+notification:
+  recipients:
+  - recipient: '#notifications'
+    notifier: c-cbwqh:n-2t4ws
+  condition:
+  - Success
+  - Failed
